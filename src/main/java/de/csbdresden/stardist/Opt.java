@@ -38,6 +38,7 @@ public class Opt {
     public static final String SHOW_PROB_DIST = "Show CNN Output";
     public static final String SET_THRESHOLDS = "Set optimized postprocessing thresholds (for selected model)";    
     public static final String RESTORE_DEFAULTS = "Restore Defaults";
+    public static final String PREVIEW = "Preview";
     
     // TODO: add descriptions for all options
     
@@ -56,6 +57,7 @@ public class Opt {
         DEFAULTS.put(VERBOSE, false);
         DEFAULTS.put(CSBDEEP_PROGRESS_WINDOW, false);
         DEFAULTS.put(SHOW_PROB_DIST, false);
+        DEFAULTS.put(PREVIEW, false);
     }
     
     static Object getDefault(final String key) {

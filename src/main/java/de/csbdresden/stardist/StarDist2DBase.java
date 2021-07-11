@@ -112,9 +112,12 @@ public abstract class StarDist2DBase {
                 roiManager.add(bboxRoi, -1);
             }
         }
-        if (roiManager.isVisible()) roiManager.repaint();
+        if (roiManager.isVisible()) {
+            roiManager.repaint();
+            roiManager.runCommand("show all");
+        }
     }
-    
+
     protected void setRoiPosition(Roi roi, int framePosition, String roiPosition) {
         switch (roiPosition) {
         case Opt.ROI_POSITION_STACK:
